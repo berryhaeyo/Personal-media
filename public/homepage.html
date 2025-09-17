@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Home Page</title>
+  <link rel="stylesheet" href="./css/homepage.css" />
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header class="top-nav">
+    <div class="nav-left">
+      <a href="./dashboard.html" class="nav-link">Dashboard</a>
+      <a href="./discover.html" class="nav-link">Discover</a>
+      <a href="./admin-panel.html" class="nav-link">Admin Panel</a>
+    </div>
+    <div class="nav-right">
+      <span class="welcome-msg">Welcome, <span id="username">User</span></span>
+      <a href="./profile.html" class="nav-link profile-icon">
+        <i class="fas fa-user"></i>
+      </a>
+      <button class="logout-btn">Logout</button>
+    </div>
+
+    <button class="mobile-menu-toggle">&#8942;</button>
+
+    <div class="mobile-menu">
+      <a href="./dashboard.html" class="nav-link">Dashboard</a>
+      <a href="./discover.html" class="nav-link">Discover</a>
+      <a href="./admin-panel.html" class="nav-link">Admin Panel</a>
+      <span class="welcome-msg">Welcome, <span id="username-mobile">User</span></span>
+      <a href="./profile.html" class="nav-link">Profile</a>
+        <i class="fas fa-user"></i>
+      </a>
+      <button class="logout-btn">Logout</button>
+    </div>
+  </header>
+
+  <main class="main-content">
+    <h1>Your Media Summary</h1>
+    <div class="stats-grid">
+      <div class="stat-card">
+        <h3>Total Items</h3>
+        <p id="total-items">0</p>
+        <div class="progress"><div id="progress-total" class="progress-bar"></div></div>
+      </div>
+      <div class="stat-card">
+        <h3>Watchlist</h3>
+        <p id="watchlist-count">0</p>
+        <div class="progress"><div id="progress-watchlist" class="progress-bar watchlist-bar"></div></div>
+      </div>
+      <div class="stat-card">
+        <h3>In Progress</h3>
+        <p id="in-progress-count">0</p>
+        <div class="progress"><div id="progress-inprogress" class="progress-bar inprogress-bar"></div></div>
+      </div>
+      <div class="stat-card">
+        <h3>Completed</h3>
+        <p id="completed-count">0</p>
+        <div class="progress"><div id="progress-completed" class="progress-bar completed-bar"></div></div>
+      </div>
+    </div>
+
+    <div class="add-media-container">
+      <a href="./add-media.html" class="btn-add-media">＋ Add Media</a>
+    </div>
+  </main>
+  
+  <script type="module" src="./js/homepage.js"></script>
+  <script type="module" src="./js/admin.js"></script>
+</body>
+</html>

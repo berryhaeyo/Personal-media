@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>User Profile</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="./css/profile.css" />
+</head>
+<body class="bg-light">
+
+  <div class="container py-4">
+    <h2 class="mb-4">👤 Your Profile</h2>
+    
+    <div id="profile-section" class="card p-4 shadow">
+      <div class="text-center mb-3">
+        <img id="profile-pic-preview" src="./assets/default-avatar.png" alt="Profile Pic" class="rounded-circle" width="120" height="120" />
+        <input type="file" id="profile-pic" class="form-control mt-2" />
+      </div>
+
+      <div class="mb-3">
+        <label for="displayName" class="form-label">Display Name</label>
+        <input type="text" class="form-control" id="displayName" placeholder="Your Name" />
+      </div>
+
+      <div class="mb-3">
+        <label for="bio" class="form-label">Bio</label>
+        <textarea class="form-control" id="bio" rows="3" placeholder="Write about yourself..."></textarea>
+      </div>
+
+      <div class="mb-3">
+        <label for="privacy" class="form-label">Privacy Setting</label>
+        <select class="form-select" id="privacy">
+          <option value="public">Public</option>
+          <option value="private">Private</option>
+        </select>
+      </div>
+
+      <div class="d-flex justify-content-between">
+        <button class="btn btn-success" onclick="saveProfile()">💾 Save</button>
+        <button class="btn btn-secondary" onclick="exportProfile()">📁 Export Profile</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://www.gstatic.com/firebasejs/10.4.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.4.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.4.0/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.4.0/firebase-storage.js"></script>
+  <script src="./js/firebase.js"></script>
+  <script src="./js/profile.js"></script>
+</body>
+</html>

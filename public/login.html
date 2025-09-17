@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Login / Register - Personal Media Management</title>
+  <link rel="stylesheet" href="./css/login.css" />
+</head>
+<body>
+  <main class="container auth-container">
+    <h1 class="main-heading">Welcome Back</h1>
+
+    <div class="tab-buttons">
+      <button class="tab-btn active" id="login-tab" type="button">Login</button>
+      <button class="tab-btn" id="register-tab" type="button">Register</button>
+    </div>
+
+    <form id="login-form" class="auth-form active" autocomplete="off">
+      <label for="login-email">Email</label>
+      <input type="email" id="login-email" placeholder="your@gmail.com" required />
+      <label for="login-password">Password</label>
+      <input type="password" id="login-password" placeholder="Password" required />
+      <p style="text-align: right; font-size: 0.9rem;">
+        <a href="#" id="forgot-password" style="color: #0e000e;">Forgot Password?</a>
+      </p>
+      <button type="submit" class="btn btn-primary">Login</button>
+      <button type="button" class="btn btn-google" id="google-login">Continue with Google</button>
+    </form>
+
+    <form id="register-form" class="auth-form" autocomplete="off">
+      <label for="register-name">Name</label>
+      <input type="text" id="register-name" placeholder="Your name" required />
+      <label for="register-email">Email</label>
+      <input type="email" id="register-email" placeholder="your@gmail.com" required />
+      <label for="register-password">Password</label>
+      <input type="password" id="register-password" placeholder="Password" required />
+      <label for="register-password2">Re-enter Password</label>
+      <input type="password" id="register-password2" placeholder="Re-enter Password" required />
+      <button type="submit" class="btn btn-primary">Register</button>
+      <button type="button" class="btn btn-google" id="google-register">Sign up with Google</button>
+    </form>
+
+    <div class="guest-info">
+      <h3>Guest Mode</h3>
+      <p>Continue as guest to add media, view profile, and use the dashboard temporarily. Note: Your data will reset when you revisit.</p>
+      <button class="btn btn-guest" id="guest-continue" type="button">Continue as Guest</button>
+    </div>
+  </main>
+
+  <div id="welcome-msg" class="auth-success-msg" style="display: none;">
+    <h2>🎉 Welcome, <span id="welcome-name"></span>!</h2>
+    <p>You’ve successfully logged in. Redirecting to dashboard...</p>
+  </div>
+
+  <a href="./frontpage.html" class="back-home-btn" aria-label="Back to Home">← Back</a>
+
+  <script type="module" src="./js/firebase.js"></script>
+  <script type="module" src="./js/auth.js"></script>
+  <script type="module" src="./js/main.js"></script>
+</body>
+</html>

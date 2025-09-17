@@ -1,0 +1,128 @@
+:root {
+  --primary-color: #7e57c2;
+  --accent-color: #b39ddb;
+  --bg-color: #f9f9fb;
+  --text-color: #333;
+  --card-bg: #fff;
+  --border-radius: 12px;
+  --transition: 0.3s ease-in-out;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+.container {
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 24px;
+  background-color: var(--card-bg);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  border-radius: var(--border-radius);
+  transition: var(--transition);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: var(--primary-color);
+}
+
+#profile-pic {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid var(--accent-color);
+  margin-bottom: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.upload-label {
+  display: block;
+  text-align: center;
+  margin-bottom: 20px;
+  color: var(--primary-color);
+  cursor: pointer;
+  font-weight: 600;
+}
+
+input[type="file"] {
+  display: none;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  font-weight: 600;
+  display: block;
+  margin-bottom: 6px;
+  color: #555;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  transition: var(--transition);
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: var(--primary-color);
+  outline: none;
+}
+
+.switch-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+button {
+  width: 100%;
+  background-color: var(--primary-color);
+  color: white;
+  padding: 12px 18px;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color var(--transition);
+}
+
+button:hover {
+  background-color: #5e35b1;
+}
+
+.export-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 30px;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    margin: 20px;
+    padding: 18px;
+  }
+
+  button {
+    font-size: 0.95rem;
+  }
+
+  .export-buttons {
+    flex-direction: column;
+  }
+}

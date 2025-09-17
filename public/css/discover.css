@@ -1,0 +1,108 @@
+/* ==== Discover Page ==== */
+.discover-page {
+  padding-top: 80px; /* space for fixed navbar */
+  background: linear-gradient(to right, #e4d3f7, #f09efa);
+  min-height: 100vh;
+  font-family: 'Segoe UI', sans-serif;
+  color: white;
+}
+
+.discover-container {
+  max-width: 800px;
+  margin: 60px auto; /* corrected margin */
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(19, 18, 18, 0.2);
+  text-align: center;
+}
+
+.discover-container h1 {
+  font-size: 2.2rem;
+  margin-bottom: 0.5rem;
+  color: #080808;
+}
+
+.discover-subtitle {
+  font-size: 1rem;
+  color: black;
+  margin-bottom: 1.5rem;
+}
+
+.recommendation-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.recommendation-list li {
+  margin-bottom: 1rem;
+}
+
+.recommendation-list a {
+  display: block;
+  padding: 1rem;
+  background-color: rgba(255, 255, 255, 0.826);
+  color: black;
+  text-decoration: none;
+  font-weight: 500;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+.recommendation-list a:hover {
+  background-color: rgba(255, 255, 255, 0.25);
+  transform: scale(1.03);
+}
+
+/* Add Link Form */
+.add-link-form {
+  margin-top: 2rem;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 1rem;
+  border-radius: 12px;
+}
+
+.add-link-form input {
+  display: block;
+  width: 80%;
+  margin: 0.5rem auto;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 6px;
+}
+
+.add-link-form button {
+  background: #ffffff;
+  color: #333;
+  border: none;
+  padding: 0.6rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.add-link-form button:hover {
+  background: #ddd;
+}
+
+/* Mobile Optimization */
+@media (max-width: 600px) {
+  .discover-container {
+    padding: 1.5rem 1rem;
+  }
+
+  .discover-container h1 {
+    font-size: 1.8rem;
+  }
+
+  .recommendation-list a {
+    font-size: 0.95rem;
+    padding: 0.8rem;
+    margin: 0.8rem;
+  }
+
+  .add-link-form input {
+    width: 95%;
+  }
+}

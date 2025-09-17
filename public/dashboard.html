@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dashboard</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./css/app.css">
+</head>
+<body class="p-3">
+
+  <<div class="d-flex justify-content-between align-items-center mb-3">
+  <h2>📚 My Media</h2>
+  <div>
+    <a href="index.html" class="btn btn-outline-secondary me-2">🏠 Logout</a>
+    <a href="add-media.html" class="btn btn-primary">+ Add Media</a>
+  </div>
+</div>
+
+  <header class="top-nav">
+    <div class="nav-left">
+      <a href="./dashboard.html" class="nav-link">Dashboard</a>
+      <a href="./discover.html" class="nav-link">Discover</a>
+      <a href="./admin-panel.html" class="nav-link">Admin Panel</a>
+    </div>
+    <div class="nav-right">
+      <span class="welcome-msg">Welcome, <span id="username">User</span></span>
+      <a href="./profile.html" class="nav-link profile-icon">
+        <i class="fas fa-user"></i>
+      </a>
+      <button class="logout-btn">Logout</button>
+    </div>
+
+    <button class="mobile-menu-toggle">&#8942;</button>
+
+    <div class="mobile-menu">
+      <a href="./dashboard.html" class="nav-link">Dashboard</a>
+      <a href="./discover.html" class="nav-link">Discover</a>
+      <a href="./admin-panel.html" class="nav-link">Admin Panel</a>
+      <span class="welcome-msg">Welcome, <span id="username-mobile">User</span></span>
+      <a href="./profile.html" class="nav-link">Profile</a>
+        <i class="fas fa-user"></i>
+      </a>
+      <button class="logout-btn">Logout</button>
+    </div>
+  </header>
+  <!-- Filter and Search Bar -->
+  <div class="row mb-3 g-2 filter-bar">
+    <div class="col-md-4">
+      <input type="text" id="searchInput" class="form-control" placeholder="🔎 Search by title...">
+    </div>
+    <div class="col-md-3">
+      <select id="filterType" class="form-control">
+        <option value="">All Types</option>
+        <option>Movie</option>
+        <option>TV Drama</option>
+        <option>Reality Show</option>
+        <option>Talk Show</option>
+        <option>Anime</option>
+        <option>Documentary</option>
+        <option>Podcast</option>
+        <option>Book</option>
+        <option>Comic / Manga</option>
+        <option>Music / Nasheed</option>
+        <option>Game</option>
+      </select>
+    </div>
+    <div class="col-md-3">
+      <select id="filterStatus" class="form-control">
+        <option value="">All Status</option>
+        <option>Planned</option>
+        <option>In Progress</option>
+        <option>Completed</option>
+        <option>Dropped</option>
+      </select>
+    </div>
+    <div class="col-md-2 text-end">
+      <button id="toggleViewBtn" class="btn btn-secondary">Toggle View</button>
+    </div>
+  </div>
+
+  <!-- Media List -->
+  <div id="mediaList" class="row g-3"></div>
+
+  <!-- Modal for Details -->
+  <div class="modal fade" id="mediaModal" tabindex="-1">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 id="modalTitle"></h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <img id="modalImg" class="img-fluid mb-3 rounded">
+          <p><b>Type:</b> <span id="modalType"></span></p>
+          <p><b>Genre:</b> <span id="modalGenre"></span></p>
+          <p><b>Year:</b> <span id="modalYear"></span></p>
+          <p><b>Country:</b> <span id="modalCountry"></span></p>
+          <p><b>Status:</b> <span id="modalStatus"></span></p>
+          <p><b>Description:</b> <span id="modalDescription"></span></p>
+        </div>
+        <div class="modal-footer">
+          <button id="shareBtn" class="btn btn-info">Copy Link</button>
+          <button id="editBtn" class="btn btn-warning">Edit</button>
+          <button id="deleteBtn" class="btn btn-danger">Delete</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="./js/dashboard.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

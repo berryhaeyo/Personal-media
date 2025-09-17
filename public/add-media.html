@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Add Media</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./css/app.css">
+</head>
+<body class="p-4">
+  <h2>Add New Media</h2>
+
+  <div class="form-card">
+    <form id="addMediaForm">
+      <div class="mb-3">
+        <label>Title</label>
+        <input type="text" class="form-control" id="title" required>
+      </div>
+
+      <div class="mb-3">
+        <label>Type</label>
+        <select id="type" class="form-control" required>
+          <option>Movie</option>
+          <option>TV Drama</option>
+          <option>Reality Show</option>
+          <option>Talk Show</option>
+          <option>Anime</option>
+          <option>Documentary</option>
+          <option>Podcast</option>
+          <option>Book</option>
+          <option>Comic / Manga</option>
+          <option>Music / Nasheed</option>
+          <option>Game</option>
+        </select>
+      </div>
+
+      <div class="mb-3">
+        <label>Genre</label>
+        <input type="text" id="genre" class="form-control">
+      </div>
+
+      <div class="mb-3">
+        <label>Year</label>
+        <input type="number" id="year" class="form-control">
+      </div>
+
+      <div class="mb-3">
+        <label>Country</label>
+        <input type="text" id="country" class="form-control">
+      </div>
+
+      <div class="mb-3">
+        <label>Status</label>
+        <select id="status" class="form-control" required>
+          <option>Planned</option>
+          <option>In Progress</option>
+          <option>Completed</option>
+          <option>Dropped</option>
+        </select>
+      </div>
+
+      <div class="mb-3">
+        <label>Description</label>
+        <textarea id="description" class="form-control"></textarea>
+      </div>
+
+      <div class="mb-3">
+        <label>Cover Image URL</label>
+        <input type="url" id="coverUrl" class="form-control">
+      </div>
+
+      <button class="btn btn-primary" type="submit">Save</button>
+      <a href="dashboard.html" class="btn btn-secondary">Cancel</a>
+    </form>
+  </div>
+
+  <script type="module" src="./js/add-media.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

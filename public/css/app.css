@@ -1,0 +1,362 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f8f7fc;
+  color: #333;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5 {
+  font-weight: 600;
+  color: #4a148c;
+}
+
+/* Buttons */
+.btn-primary {
+  background-color: #6a1b9a;
+  border-color: #6a1b9a;
+  transition: 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #4a148c;
+  border-color: #4a148c;
+}
+
+.btn-secondary {
+  background-color: #b39ddb;
+  border-color: #b39ddb;
+  color: #fff;
+}
+
+.btn-secondary:hover {
+  background-color: #9575cd;
+  border-color: #9575cd;
+  color: #fff;
+}
+
+.btn-info {
+  background-color: #7e57c2;
+  border: none;
+  color: #fff;
+}
+.btn-info:hover {
+  background-color: #5e35b1;
+}
+
+/* Form Card */
+.form-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 15px rgba(106, 27, 154, 0.1);
+  max-width: 700px;
+  margin: auto;
+}
+
+.form-control {
+  border-radius: 10px;
+  border: 1px solid #d1c4e9;
+}
+
+.form-control:focus {
+  border-color: #7e57c2;
+  box-shadow: 0 0 0 0.2rem rgba(126, 87, 194, 0.25);
+}
+
+/* Dashboard Cards */
+.card {
+  border: none;
+  border-radius: 14px;
+  box-shadow: 0 3px 10px rgba(106, 27, 154, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 18px rgba(106, 27, 154, 0.2);
+}
+
+.card-title {
+  color: #4a148c;
+  font-weight: 600;
+}
+
+/* Filter bar */
+.filter-bar select, 
+.filter-bar input {
+  border-radius: 10px;
+  border: 1px solid #d1c4e9;
+}
+
+/* Modal */
+.modal-content {
+  border-radius: 14px;
+  border: none;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+}
+
+.modal-header {
+  background-color: #f3e5f5;
+  border-bottom: none;
+}
+
+.modal-title, #modalTitle {
+  font-weight: 600;
+  color: #4a148c;
+}
+
+.modal-footer .btn {
+  border-radius: 8px;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  h2 {
+    font-size: 1.5rem;
+  }
+  .form-card {
+    padding: 15px;
+  }
+}
+
+/* 🌙 Global Styles */
+body {
+  background: #f8f6fb;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #2d2d2d;
+}
+
+/* Headings */
+h2, h5 {
+  color: #4b0082; /* Deep Purple */
+  font-weight: 600;
+}
+
+/* Buttons */
+.btn-primary {
+  background: #6a0dad;
+  border: none;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+.btn-primary:hover {
+  background: #520a8a;
+}
+
+.btn-secondary {
+  background: #aaa;
+  border: none;
+  border-radius: 8px;
+}
+.btn-secondary:hover {
+  background: #888;
+}
+
+.btn-warning {
+  background: #f0ad4e;
+  border: none;
+  border-radius: 8px;
+}
+.btn-danger {
+  background: #d9534f;
+  border: none;
+  border-radius: 8px;
+}
+.btn-info {
+  background: #5bc0de;
+  border: none;
+  border-radius: 8px;
+}
+
+/* Form Styles */
+.form-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  margin-bottom: 20px;
+}
+
+label {
+  font-weight: 500;
+  color: #4b0082;
+}
+
+.form-control {
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  transition: 0.2s;
+}
+.form-control:focus {
+  border-color: #6a0dad;
+  box-shadow: 0 0 0 0.2rem rgba(106,13,173,0.2);
+}
+
+/* Cards (Dashboard) */
+.card {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+}
+.card-title {
+  color: #6a0dad;
+  font-weight: 600;
+}
+
+/* Card Images */
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 1px solid #eee;
+}
+
+/* Filter Bar */
+.filter-bar {
+  background: #fff;
+  padding: 12px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+/* Table View */
+table {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+table th {
+  background: #6a0dad;
+  color: #fff;
+  font-weight: 500;
+}
+table tr:hover {
+  background: #f0e6fa;
+}
+
+/* Modal */
+.modal-content {
+  border-radius: 12px;
+  border: none;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+.modal-header {
+  background: #6a0dad;
+  color: #fff;
+  border-radius: 12px 12px 0 0;
+}
+.modal-header h5 {
+  color: #fff;
+}
+.modal-body {
+  padding: 20px;
+}
+.modal-footer button {
+  border-radius: 8px;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .filter-bar {
+    flex-direction: column;
+  }
+}
+.btn-outline-secondary {
+  border-radius: 8px;
+  border: 1px solid #6a0dad;
+  color: #6a0dad;
+  background: #fff;
+  transition: 0.3s;
+}
+
+.btn-outline-secondary:hover {
+  background: #6a0dad;
+  color: #fff;
+}
+/* === Base Button Style === */
+button,
+.btn {
+  border-radius: 8px;
+  font-weight: 500;
+  padding: 0.45rem 1rem;
+  border: none;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+/* === Primary (Purple) === */
+.btn-primary,
+.logout-btn {
+  background-color: #7c3aed; /* vivid purple */
+  color: #fff;
+}
+.btn-primary:hover,
+.logout-btn:hover {
+  background-color: #6d28d9; /* deeper purple */
+  box-shadow: 0 4px 10px rgba(124, 58, 237, 0.4);
+}
+
+/* === Secondary (Outline) === */
+.btn-outline-secondary {
+  background-color: transparent;
+  color: #7c3aed;
+  border: 2px solid #7c3aed;
+}
+.btn-outline-secondary:hover {
+  background-color: #7c3aed;
+  color: #fff;
+}
+
+/* === Info (Share) === */
+.btn-info {
+  background-color: #a78bfa;
+  color: #fff;
+}
+.btn-info:hover {
+  background-color: #8b5cf6;
+  box-shadow: 0 4px 10px rgba(167, 139, 250, 0.4);
+}
+
+/* === Warning (Edit) === */
+.btn-warning {
+  background-color: #facc15;
+  color: #000;
+}
+.btn-warning:hover {
+  background-color: #eab308;
+  color: #000;
+  box-shadow: 0 4px 10px rgba(250, 204, 21, 0.4);
+}
+
+/* === Danger (Delete) === */
+.btn-danger {
+  background-color: #ef4444;
+  color: #fff;
+}
+.btn-danger:hover {
+  background-color: #dc2626;
+  box-shadow: 0 4px 10px rgba(239, 68, 68, 0.4);
+}
+
+/* === Mobile Menu Buttons (same purple style) === */
+.mobile-menu .logout-btn,
+.mobile-menu .btn {
+  width: 100%;
+  margin-top: 0.5rem;
+  background-color: #7c3aed;
+  color: #fff;
+  text-align: center;
+}
+.mobile-menu .logout-btn:hover,
+.mobile-menu .btn:hover {
+  background-color: #6d28d9;
+  box-shadow: 0 4px 10px rgba(124, 58, 237, 0.4);
+}
